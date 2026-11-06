@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Panel input Perpus Mini">
+    <title>Perpus Mini - MUHAMMAD BOBY SUDJANA MAHARDIKA TALLASA (252281)</title>
+</head>
+<body>
+    <!-- Pilihan Identitas Pembuat -->
+    <div style="background: #f4f4f4; padding: 10px; margin-bottom: 15px; border-left: 4px solid #007bff;">
+        <p style="margin: 0; font-weight: bold;">Dibuat oleh:</p>
+        <p style="margin: 5px 0 0 0;">
+            NAMA: MUHAMMAD BOBY SUDJANA MAHARDIKA TALLASA<br>
+            NIM: 252281
+        </p>
+    </div>
+
+    <h1>Perpus Mini: Input Data</h1>
+    <p>Pilih menu. Halaman terbuka di dalam bingkai di bawah.</p>
+    <ul>
+        <li><a href="form.html" target="panel">Tambah buku</a></li>
+        <li><a href="cari.html" target="panel">Cari buku</a></li>
+        <!-- Modifikasi: Menu ketiga yang membuka hasil.html di bingkai panel -->
+        <li><a href="hasil.html" target="panel">Hasil pencarian</a></li>
+    </ul>
+    
+    <!-- Modifikasi: Ukuran iframe diubah menjadi 600x480 -->
+    <iframe name="panel" src="form.html" title="Panel Perpus Mini" width="600" height="480"></iframe>
+
+    <hr>
+    
+    <!-- Tugas Modifikasi: Penyematan situs eksternal pada bingkai terpisah -->
+    <h3>Bingkai Situs Eksternal (Contoh Bank/Media Sosial)</h3>
+    <iframe src="https://www.github.com" width="600" height="300" title="Situs Eksternal" id="external-frame"></iframe>
+    <p style="font-size: 0.9em; color: #555;">
+        <em>Catatan Konsol:</em> Jika bingkai di atas tampak kosong atau gagal memuat halaman, periksa tab <strong>Console</strong> pada Developer Tools browser Anda. 
+        Hal ini terjadi karena sebagian besar situs besar (seperti GitHub, Google, atau situs perbankan) menerapkan kebijakan keamanan <code>X-Frame-Options</code> atau <code>Content Security Policy (CSP)</code> yang melarang halaman mereka disematkan (embed) di dalam iframe situs milik pihak lain guna mencegah serangan <em>Clickjacking</em>.
+    </p>
+</body>
+</html>
